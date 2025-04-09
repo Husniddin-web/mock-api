@@ -281,7 +281,7 @@ const activateUser = async (req, res) => {
 
         await user.save()
 
-        res.status(200).send({ message: "User faollashtirldi", is_active: author.is_active })
+        res.status(200).send({ message: "User faollashtirldi", is_active: user.is_active })
 
     } catch (error) {
         errorHandler(error, res)
